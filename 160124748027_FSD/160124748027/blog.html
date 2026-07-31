@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Fellow Human Being | Datla Gnana Venkata Reddy</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color:#f8f9fa;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600");
+            background-size:cover;
+            background-position:center;
+            height:450px;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        /* Blog Cards */
+        .blog-card img{
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card{
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        /* About Section */
+        #about{
+            background:#ffffff;
+        }
+
+        /* Footer */
+        footer{
+            background:#212529;
+            color:white;
+        }
+
+        footer a{
+            color:#ffc107;
+            text-decoration:none;
+        }
+
+        footer a:hover{
+            text-decoration:underline;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            A Fellow Human Being
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#journey">My Journey</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Achievements</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Hero Section -->
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div>
+
+        <h1 class="display-3 fw-bold">
+            Hi, I'm Datla Gnana Venkata Reddy
+        </h1>
+
+        <p class="lead">
+            B.Tech CSE (AI & ML) Student at CBIT | AI Enthusiast | Java Developer | MERN Stack Learner
+        </p>
+
+        <p class="mb-4">
+            Welcome to <strong>A Fellow Human Being Blog</strong>, where I share my journey, projects, achievements, and experiences in technology and continuous learning.
+        </p>
+
+        <a href="#about" class="btn btn-warning btn-lg me-2">
+            About Me
+        </a>
+
+        <a href="#journey" class="btn btn-outline-light btn-lg">
+            My Journey
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Main Content -->
+
+<div class="container my-5">
+
+<div class="row">
+
+<!-- Blog Posts -->
+
+<div class="col-lg-8">
+
+<div class="row g-4" id="journey">
+
+<!-- Card 1 -->
+
+<div class="col-md-6">
+
+<div class="card shadow blog-card h-100">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4 class="card-title">
+About Me
+</h4>
+
+<p class="card-text">
+I'm Datla Gnana Venkata Reddy, a B.Tech CSE (AI & ML) student at CBIT. I love learning new technologies and solving real-world problems.
+</p>
+
+<a href="#about" class="btn btn-primary">
+Read More
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="col-md-6">
+
+<div class="card shadow blog-card h-100">
+
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4 class="card-title">
+My Skills
+</h4>
+
+<p class="card-text">
+Skilled in Java, Python, HTML, CSS, Bootstrap, JavaScript, React, SQL, Git, and Machine Learning fundamentals.
+</p>
+
+<a href="#" class="btn btn-primary">
+Explore Skills
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="col-md-6">
+
+<div class="card shadow blog-card h-100">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4 class="card-title">
+Projects
+</h4>
+
+<p class="card-text">
+Built projects including AI PDF Summarizer and web applications while exploring Artificial Intelligence and Full Stack Development.
+</p>
+
+<a href="#" class="btn btn-primary">
+View Projects
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 4 -->
+
+<div class="col-md-6" id="achievements">
+
+<div class="card shadow blog-card h-100">
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500"
+class="card-img-top">
+
+<div class="card-body">
+
+<h4 class="card-title">
+Achievements
+</h4>
+
+<p class="card-text">
+Oracle AI Certified, active coding learner, hackathon participant, and student leader passionate about continuous growth.
+</p>
+
+<a href="#" class="btn btn-primary">
+See Achievements
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Sidebar -->
+
+<div class="col-lg-4">
+
+<!-- Search -->
+
+<div class="card shadow mb-4">
+
+<div class="card-header bg-primary text-white">
+Search
+</div>
+
+<div class="card-body">
+
+<input type="text"
+class="form-control"
+placeholder="Search my blog">
+
+</div>
+
+</div>
+
+<!-- Categories -->
+
+<div class="card shadow mb-4">
+
+<div class="card-header bg-success text-white">
+Categories
+</div>
+
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">About Me</li>
+
+<li class="list-group-item">Skills</li>
+
+<li class="list-group-item">Projects</li>
+
+<li class="list-group-item">Achievements</li>
+
+<li class="list-group-item">Future Goals</li>
+
+</ul>
+
+</div>
+
+<!-- Quote -->
+
+<div class="card shadow">
+
+<div class="card-header bg-warning">
+My Motto
+</div>
+
+<div class="card-body">
+
+<p class="mb-0 fst-italic">
+"Winning is the only option"
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- About -->
+
+<section class="bg-light py-5" id="about">
+
+<div class="container text-center">
+
+<h2>About Me</h2>
+
+<p class="lead">
+Hello! I'm <strong>Datla Gnana Venkata Reddy</strong>, a Computer Science student specializing in Artificial Intelligence and Machine Learning at Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad.
+</p>
+
+<p>
+I enjoy building web applications, exploring Artificial Intelligence, learning new technologies, and solving challenging programming problems. My goal is to become a Software Engineer and contribute to innovative AI-driven solutions that create a positive impact.
+</p>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="py-4" id="contact">
+
+    <div class="container text-center">
+
+        <h4 class="fw-bold">
+            A Fellow Human Being
+        </h4>
+
+        <p>
+            Thank you for visiting my personal blog!
+        </p>
+
+        <p>
+            <strong>Datla Gnana Venkata Reddy</strong><br>
+            B.Tech CSE (AI & ML)<br>
+            Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad
+        </p>
+
+        <p>
+            📧 Email:
+            <a href="mailto:dvenkatareddy2006@gmail.com" class="text-warning text-decoration-none">
+                dvenkatareddy2006@gmail.com
+            </a>
+        </p>
+
+        <p class="mb-0">
+            © 2026 Datla Gnana Venkata Reddy | Designed using Bootstrap 5
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
