@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #fff7ed, #f0fdfa);
+  color: #1f2937;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 45px 20px;
+}
+
+.app-shell {
+  width: min(100%, 960px);
+  margin: auto;
+  padding: 36px;
+  background: #ffffff;
+  border: 1px solid #e8e5df;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(68, 64, 60, 0.10);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.heading p:last-child {
+  margin: 9px 0 0;
+  color: #78716c;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.dashboard article {
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
+  background: #f5f5f4;
+  border: 1px solid #e7e5e4;
+}
+
+.dashboard span {
+  display: block;
+  color: #78716c;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.dashboard strong {
+  font-size: 27px;
+}
+
+.study-form {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1fr 0.8fr auto;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #d6d3d1;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.11);
+}
+
+button {
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 10px;
+  background: #1f2937;
+  color: white;
+  font-weight: 700;
+}
+
+.add-btn {
+  background: #0f766e;
+}
+
+.add-btn:hover {
+  background: #115e59;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+  margin-bottom: 12px;
+  border: 1px solid #e7e5e4;
+  border-radius: 15px;
+  background: #fafaf9;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.session:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(68, 64, 60, 0.07);
+}
+
+.session h3 {
+  margin: 0 0 7px;
+}
+
+.session p {
+  margin: 0;
+  color: #78716c;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.buttons button {
+  background: #1f2937;
+  padding: 9px 13px;
+}
+
+.buttons .remove {
+  background: #b91c1c;
+}
+
+.finished {
+  opacity: 0.55;
+}
+
+.finished h3 {
+  text-decoration: line-through;
+}
+
+.empty {
+  padding: 52px 20px;
+  text-align: center;
+  border: 2px dashed #d6d3d1;
+  border-radius: 16px;
+  color: #78716c;
+}
+
+.book-icon {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.empty h3 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.empty p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .study-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .study-form input:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .add-btn {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 10px;
+  }
+
+  .app-shell {
+    padding: 20px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .study-form {
+    grid-template-columns: 1fr;
+  }
+
+  .study-form input:first-child,
+  .add-btn {
+    grid-column: auto;
+  }
+
+  .session {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .buttons button {
+    flex: 1;
+  }
+}
