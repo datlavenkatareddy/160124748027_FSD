@@ -1,0 +1,69 @@
+<div class="container">
+
+  <div class="header">
+    <h1>Student Validation Form</h1>
+    <p>Enter your details carefully</p>
+  </div>
+
+  <form #studentForm="ngForm"
+        (ngSubmit)="studentForm.valid && submit()">
+
+    <label>Name</label>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      required
+      minlength="3"
+      placeholder="Enter student name">
+
+    <label>Roll Number</label>
+    <input
+      type="text"
+      name="rollNo"
+      [(ngModel)]="rollNo"
+      required
+      placeholder="Enter roll number">
+
+    <label>Email</label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      required
+      email
+      placeholder="Enter email">
+
+    <label>Phone Number</label>
+    <input
+      type="tel"
+      name="phone"
+      [(ngModel)]="phone"
+      required
+      minlength="10"
+      maxlength="10"
+      placeholder="Enter phone number">
+
+    <label>Department</label>
+    <input
+      type="text"
+      name="department"
+      [(ngModel)]="department"
+      required
+      placeholder="Enter department">
+
+    <label>Message</label>
+    <textarea
+      name="message"
+      [(ngModel)]="message"
+      required
+      minlength="10"
+      placeholder="Enter your message"></textarea>
+
+    <button type="submit">
+      Submit Student Details
+    </button>
+
+  </form>
+
+</div>

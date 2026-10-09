@@ -1,0 +1,49 @@
+<div class="container">
+
+  <div class="header">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you</p>
+  </div>
+
+  <form #contactForm="ngForm" (ngSubmit)="contactForm.valid && submit()">
+
+    <label>Name</label>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      required
+      placeholder="Enter your name">
+
+    <label>Email</label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      required
+      email
+      placeholder="Enter your email">
+
+    <label>Subject</label>
+    <input
+      type="text"
+      name="subject"
+      [(ngModel)]="subject"
+      required
+      placeholder="Enter subject">
+
+    <label>Message</label>
+    <textarea
+      name="message"
+      [(ngModel)]="message"
+      required
+      minlength="10"
+      placeholder="Enter your message"></textarea>
+
+    <button type="submit">
+      Send Message
+    </button>
+
+  </form>
+
+</div>
